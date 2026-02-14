@@ -1,2 +1,25 @@
-# react-fastapi-pipeline
-A React + FastAPI based visual pipeline builder.  Users can create nodes and edges visually. Backend validates the pipeline and checks if it forms a DAG (cycle detection). Returns total nodes, total edges and DAG status.
+# React + FastAPI Pipeline Builder
+
+A full-stack visual pipeline builder built using React and FastAPI.
+
+---
+
+## 🚀 Features
+
+- Visual node editor (React)
+- Create and connect nodes via edges
+- Backend validation using FastAPI
+- Cycle detection using DFS
+- Returns:
+  - Total Nodes
+  - Total Edges
+  - is_dag (true/false)
+
+---
+
+## 🖥️ Backend Setup
+
+```bash
+cd backend
+pip install -r requirements.txt
+python -m uvicorn main:app --reload
